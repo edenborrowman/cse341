@@ -9,8 +9,8 @@ const app = express();
 //registers a new templating engine (Express Handlebars is not built in)
 // app.set('view engine', 'pug'); //sets engine to pug
 app.engine('hbs', expressHbs({
-    layoutsDir: 'views/layouts/',//where layouts live (this is the default, too)
-    defaultLayout: 'main-layout', // the default layout used for all files.
+    layoutsDir: 'views/layouts/',
+    defaultLayout: 'main-layout',
     extname: 'hbs'
   })
 );
