@@ -1,0 +1,271 @@
+
+ASSIGNMENT O5a
+
+*********************************************
+*******************APP.JS********************
+const http = require('http');
+
+const express = require('express');
+
+const app = express();
+
+app.use('/', (req, res, next) => {
+    console.log('First middleware');
+    next(); 
+});
+
+app.use('/peaches', (req, res, next) => {
+    console.log('Second middleware');
+    res.send('<h1>Peaches!</h1>');
+});
+
+const server = http.createServer(app);
+
+server.listen(3000);
+
+
+
+
+ASSIGNMENT 05b
+
+***********************************************
+*******************INDEX.JS********************
+
+
+const pant = require('path');
+
+const express l = require('express');
+
+const rootDir = require('../util/path');
+
+const router = express.Router();
+
+router.get('/', (req, res, next) => {
+    res.sendFile(path.join(rootDir, 'views', 'index.html'));
+});
+
+router.get('/peaches', (req, res, next) => {
+    res.sendFile(path.join(__dirname, 'views', 'peaches.html'));
+});
+
+module.exports = router;
+
+
+
+************************************************
+*******************INDEX.HTML*******************
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment B—Section 5</title>
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+    <h1>Hello, Beautiful world!</h1>
+</body>
+</html>
+
+
+
+
+*********************************************
+*******************APP.JS********************
+const http = require('http');
+
+const express = require('express');
+const bodyParser = require('body-parser');
+
+const app = express();
+
+const indexRoutes = require('./routes/index');
+
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(express.static(path.join(__dirname, 'public')));
+
+app.use(indexRoutes);
+
+app.listen(3000);
+
+
+************************************************
+******************PEACHES.HTML******************
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Millions of Peaches</title>
+</head>
+<body>
+    <h1>Millions and millions of peaches.</h1>
+</body>
+</html>
+
+
+
+
+
+
+
+
+ASSIGNMENT 06
+
+************************************************
+*******************END.EJS******************** 
+</body>
+</html>
+
+
+
+************************************************
+******************HEAD.EJS******************** 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= pageTitle %></title>
+</head>
+<body>
+    <header>
+       <a href="/"> Enter User </a>
+            |
+        <a href="/users"> Users</a>
+    </header>
+
+
+
+************************************************
+**************MAIN-LAYOUT.HBS********************   
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ pageTitle }}</title>
+</head>
+<body>
+    <header>
+       <a>(href="/") Enter User </a>
+            |
+        <a>(href="/users") Users</a>
+    </header>
+    {{{body}}}    
+</body>
+</html>  
+
+
+
+************************************************
+**************MAIN-LAYOUT.PUG********************  
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title #{pageTitle}
+    body 
+        header 
+            a(href="/") Enter User 
+            |
+            a(href="/users") Users
+        block content
+
+
+
+************************************************
+**************INDEX.EJS*************************  
+<%- include('includes/head.ejs') %>
+    <form action="/add-user" method="POST">
+        <input type="text" name="username">
+        <button type="submit">Add User</button>
+    </form>
+<%- include('includes/end.ejs') %>
+
+
+
+************************************************
+*******************USERS.HBS******************** 
+ 
+<h1>Users</h1>
+{{#if hasUsers}}
+    <ul>
+        {{#each users}}
+            <li>{{ this.name }}</li>
+        {{/each}}
+    </ul>
+{{else}}
+<h1>No Users Found</h1>
+{{/if}}
+
+
+************************************************
+*******************USERS.PUG******************** 
+extends layouts/main-layout.pug
+
+block content
+    h1 Users
+    if users.length > 0
+        ul  
+            each user in users
+                li #{user.name} 
+    else 
+        h1 No users found!
+
+
+
+*********************************************
+*******************APP.JS******************** 
+
+        const express = require('express');
+
+const app = express();
+const bodyParser = require('body-parser');
+const expressHbs = require('express-handlebars');
+
+
+const users = [];
+
+// *********PUG*********
+// app.set('view engine', 'pug');
+// app.set('views', 'views');
+
+
+// *********HANDLEBARS**
+// app.engine('hbs', expressHbs({
+//     layoutsDir: 'views/layouts/',
+//     defaultLayout: 'main-layout',
+//     extname: 'hbs'})
+// );
+// app.set('view engine', 'hbs');
+// app.set('views', 'views');
+
+// *********EJS*********
+app.set('view engine', 'ejs');
+app.set('views', 'views');
+
+
+app.use(bodyParser.urlencoded({ extended: false }));
+
+app.get('/', (req, res, next) => {
+    res.render('index', {pageTitle: "Add User"});
+});
+
+app.get('/users', (req, res, next) => {
+    res.render('users', {pageTitle: 'User', users: users, hasUsers: users.length > 0});
+});
+
+app.post('/add-user', (req, res, next) => {
+    users.push({name: req.body.username});
+    res.redirect('users');
+});
+
+app.listen(3000)
