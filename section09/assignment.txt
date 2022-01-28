@@ -8,12 +8,19 @@ Please answer the questions in this text file and submit it to I-Learn.
 
 3. Briefly list and describe the elements of the application that are functioning. 
     Everything is working correctly...now. It took a LOOONG time to figure out a bug and fix it. Turns out, I'd deleted everything in my cart.json file, just leaving an empty object (thinking it would just reset everything). What I should have done was delete the data, but leave the structure, so it would look like this: {"products": [], "totalPrice":0}
+    
+    And now I know.
+
+    In the mean time, I laborously worked through just about every file in the repository, trying to figure out the error. It has been a tough week!
 
 4. Briefly describe any pieces of the assignment that are not yet working correctly.
+    Like I said above, it is all working now.
 
 5. Briefly describe the "coolest" thing you learned while completing this assignment.
+    Hm. I'm frustrated with this week, so it's hard to think of something cool. Maybe just observing how the MVC archetecture works together to make scalable code? That seems pretty cool.
 
 6. If you could change this assignment to be more effective or helpful, what would you change?
+    I'm really having a hard time with the videos. He goes SO fast. There's lots of cutting and pasting, which is a literal blip on the screen. When I'm trying to type along that makes it so easy to get lost and miss things. I find myself pausing, backing up, and rewatching bits over and over. It's not that the concepts are incredibly hard, it's that the presentation is tough to type along with. I easily spend 4 hours for every hour of video...probably more. It's really frustrating.
 
 7. Please select the category you feel best describes your assignment:
    1 - Some attempt was made
@@ -22,4 +29,8 @@ Please answer the questions in this text file and submit it to I-Learn.
    4 - Meets requirements
    5 - Shows creativity and excels above and beyond requirements
 
+   I think I'll give myself a 5...not so much because I was creative (I mean, my assignment looks almost just like his), but because I had to debug so much of my code. That has to cound for going beyond the requirements.
+
 8. Provide a brief justification (1-2 sentences) for selecting that category.
+
+    I took so much time reviewing my code to find my silly error, so I think that counts for going above and beyond.
