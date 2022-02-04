@@ -1,4 +1,12 @@
+const cors = require('cors'); // Place this with other requires (like 'path' and 'express')
+const corsOptions = {
+  origin: "https://borrowman-cse341store.herokuapp.com/",
+  optionsSuccessStatus: 200
+};
+
+
 const path = require('path');
+const PORT = process.env.PORT || 3000;
 
 const express = require('express');
 const bodyParser = require('body-parser');
@@ -40,6 +48,7 @@ app.use(
 );
 app.use(csrfProtection);
 app.use(flash());
+app.use(cors(corsOptions));
 
 app.use((req, res, next) => {
   if (!req.session.user) {
