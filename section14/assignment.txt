@@ -1,0 +1,33 @@
+After completing the assignment, be sure to push to Github and Heroku.
+Please answer the questions in this text file and submit it to I-Learn.
+
+1. Copy and paste the URL for your web application (e.g., Heroku):
+https://backend-shop-341.herokuapp.com/
+
+2. Copy and paste the URL for your source code repository (e.g., GitHub):
+    https://github.com/edenborrowman
+
+3. Briefly list and describe the elements of the application that are functioning. 
+    Well, everything is working. It took me 4 hours to figure out why I wasn't able to push to Heroku (I'd typed "PATH" as "PATHT"...so stupid!). My email API has been shut down—apparently they frown on pushing your API key to GitHub, but Bro. Lyon said not to worry about it.
+
+4. Briefly describe any pieces of the assignment that are not yet working correctly.
+    Like I said above, it is all working now.
+
+5. Briefly describe the "coolest" thing you learned while completing this assignment.
+    Ugh. I've hated life this week. Lol. I guess it's cool I finally figured out where my blocker was on this assignment. It's not so cool that a little thing like that tripped me up in the first place. I tried EVERYTHING I could think of to make it work before I found the typo.
+
+6. If you could change this assignment to be more effective or helpful, what would you change?
+    Sometimes I feel like the directions leave a lot to be desired. I know it's an upper division class and we're supposed to solve problems for ourselves, but I struggled a lot this week.
+
+7. Please select the category you feel best describes your assignment:
+   1 - Some attempt was made
+   2 - Developing, but significantly deficient
+   3 - Slightly deficient, but still mostly adequate
+   4 - Meets requirements
+   5 - Shows creativity and excels above and beyond requirements
+
+   I think I'll give myself a 5 because I figured out my problem on my own. Hopefully that counts for something!
+
+8. Provide a brief justification (1-2 sentences) for selecting that category.
+
+    I combed over every piece of my code to finally figure out what was wrong. Hopefully all this practice will make me better at debugging. I'm a UX/UI designer...this is not my usual end of the stack, so none of this comes easily to me, but I am learning.
