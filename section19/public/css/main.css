@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital@0;1&family=Montserrat&display=swap');
 
 * {
   box-sizing: border-box;
@@ -7,7 +8,11 @@
 body {
   padding: 0;
   margin: 0;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+  font-family: 'Lobster Two', cursive;
 }
 
 main {
@@ -33,7 +38,7 @@ form {
 
 .main-header {
   width: 100%;
-  height: 3.5rem;
+  height: 10rem;
   background-color: #00695c;
   padding: 0 1.5rem;
   display: flex;
@@ -149,6 +154,13 @@ form {
 #side-menu-toggle:hover {
   color: #ffeb3b;
   border-color: #ffeb3b;
+}
+
+div.hero {
+  width: 100%;
+  background-color: pink;
+  height: 8rem;
+  
 }
 
 .backdrop {

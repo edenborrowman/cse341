@@ -1,0 +1,33 @@
+After completing the assignment, be sure to push to Github and Heroku.
+Please answer the questions in this text file and submit it to I-Learn.
+
+1. Copy and paste the URL for your web application (e.g., Heroku):
+https://backend-shop-341.herokuapp.com/
+
+2. Copy and paste the URL for your source code repository (e.g., GitHub):
+    https://github.com/edenborrowman
+
+3. Briefly list and describe the elements of the application that are functioning. 
+    I think everything is working. Last week I got the feedback that the 500 error message wasn't always working, and I think I tracked down why. It's working for me now, and hopefully it works for everyone.
+
+4. Briefly describe any pieces of the assignment that are not yet working correctly.
+    I think it's all there.
+
+5. Briefly describe the "coolest" thing you learned while completing this assignment.
+   It was fun to dip a toe back into the front end world as I styled my shop. It's also cool to see everything come together.
+
+6. If you could change this assignment to be more effective or helpful, what would you change?
+   I don't really know how to answer this. I have learned from the assignment, though I didn't really enjoy the format. I wish Max was a bit easier to follow. He copies and pastes a lot, which is great, unless you're trying to type along and your eyes are off the screen for a split second...in which case you're lost. That happened to me a lot.
+
+7. Please select the category you feel best describes your assignment:
+   1 - Some attempt was made
+   2 - Developing, but significantly deficient
+   3 - Slightly deficient, but still mostly adequate
+   4 - Meets requirements
+   5 - Shows creativity and excels above and beyond requirements
+
+   I think I'll give myself a 5. I worked really hard.
+
+8. Provide a brief justification (1-2 sentences) for selecting that category.
+
+    I tried to make the shop my own. I made custom error pages with fun CSS and JS effects. I styled everything. I practiced CRUD by changing up the cart page. I put a lot of hours into tracking down my error page problem. I know I've learned a lot.

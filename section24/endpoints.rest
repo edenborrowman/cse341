@@ -1,0 +1,5 @@
+GET http://localhost:8080/feed/posts
+
+###
+
+POST http://localhost:8080/feed/posts

@@ -1,0 +1,40 @@
+<%- include('includes/head.ejs') %>
+</head>
+
+<body>
+    <%- include('includes/navigation.ejs') %>
+    <div class="container1">
+        <h1>We're really sorry to tell you, but something went wrong.</h1>
+        <p>It appears one of our engineers messed up big time. Choose someone to fire.</p>
+        <div class="container2">
+            <div class="inner-container">
+                <div class="engineer-div1">                
+                    <div id= "x-spot-1" class="x-container">
+                    </div>          
+                </div>
+                <div class="fireButtonDiv">
+                    <button class="fireSomeone" onclick=fireEngineer1()>Fire Dale</button>
+                </div>
+            </div>
+            <div class="inner-container">
+                <div class="engineer-div2">
+                    <div id="x-spot-2" class="x-container">
+                    </div>
+                </div>
+                <div class="fireButtonDiv">
+                    <button class="fireSomeone" onclick="fireEngineer2()">Fire Bob</button>
+                 </div>
+            </div>
+            <div class="inner-container">        
+                <div class="engineer-div3"> 
+                    <div id="x-spot-3" class="x-container">
+                    </div>               
+                </div>
+                <div class="fireButtonDiv">
+                    <button class="fireSomeone" onclick="fireEngineer3()">Fire Jimmy</button>
+                </div>
+            </div>
+    </div>
+</div>
+
+<%- include('includes/end.ejs') %>

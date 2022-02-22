@@ -1,0 +1,33 @@
+After completing the assignment, be sure to push to Github and Heroku.
+Please answer the questions in this text file and submit it to I-Learn.
+
+1. Copy and paste the URL for your web application (e.g., Heroku):
+https://backend-shop-341.herokuapp.com/
+
+2. Copy and paste the URL for your source code repository (e.g., GitHub):
+    https://github.com/edenborrowman
+
+3. Briefly list and describe the elements of the application that are functioning. 
+    I think everything is working...mostly (see #4)
+
+4. Briefly describe any pieces of the assignment that are not yet working correctly.
+    I think I have a bug, but I can't track it down and it's inconsistent. Sometimes when I log out and then log back in, I get a 500 error when I add items to the cart. I'm still investigating what might be causing that.
+
+5. Briefly describe the "coolest" thing you learned while completing this assignment.
+    I first logged onto a website in 1992. It's been a while ago. Somehow it was just this week when I first learned what all the error codes are/what they mean.
+
+6. If you could change this assignment to be more effective or helpful, what would you change?
+    I think there was a little bug in Max's code. He has you hard-code an ID in at one point but never tells you to remove it. It's still in his own "cheater" code. It causes the app to crash. I wish he'd have caught and fixed that. It took me 2 hours (and Griffin Pope's expert help) to find it.
+
+7. Please select the category you feel best describes your assignment:
+   1 - Some attempt was made
+   2 - Developing, but significantly deficient
+   3 - Slightly deficient, but still mostly adequate
+   4 - Meets requirements
+   5 - Shows creativity and excels above and beyond requirements
+
+   I think I'll give myself a 5. I worked hard.
+
+8. Provide a brief justification (1-2 sentences) for selecting that category.
+
+    Once again, I spent hours tracking down an error. It turned out to be something dumb, which seems to be par for the course for me.
